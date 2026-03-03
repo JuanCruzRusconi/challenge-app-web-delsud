@@ -1,0 +1,28 @@
+@import "./variables.css";
+
+* {
+  	padding: 0;
+  	margin: 0;
+  	box-sizing: border-box;
+}
+
+html,
+body {
+	margin: 0;
+  	padding: 0;
+	height: 100%;
+  	max-width: 100vw;
+  	overflow-x: hidden;
+    font-family: var(--font-primary);
+	color: var(--color-primary);
+	font-size: 16px;
+}
+
+.brand {
+	color: var(--color-secondary);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
