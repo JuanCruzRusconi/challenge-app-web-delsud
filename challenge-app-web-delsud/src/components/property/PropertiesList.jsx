@@ -1,5 +1,5 @@
 import PropertyCard from "./PropertyCard";
-import Subtitle from "../layout/Subtitle";
+import Subtitle from "../common/Subtitle";
 import styles from "./property.module.css";
 
 const PropertyList = ({ properties }) => {

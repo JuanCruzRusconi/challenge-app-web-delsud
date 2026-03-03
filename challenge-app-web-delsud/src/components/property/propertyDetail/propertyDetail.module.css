@@ -1,0 +1,84 @@
+.propertyDetail_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100dvh;
+    min-width: 326px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.propertyDetail_image {
+    min-width: 100px;
+    position: "relative";
+    width: 100%;
+    height: 327px; 
+}
+
+.propertyDetail_specs {
+    display: flex;
+    flex-direction: column;
+    max-width: 1118px;
+}
+
+.propertyDetail_specsItems {
+    display: flex;
+    flex-direction: row;
+}
+
+/* PropertyDetailSpecs Styles */
+.propertyDetailSpecs_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 102px;
+    width: 100%;
+    gap: 1rem;
+}
+
+.propertyDetailSpecs_value {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.propertyDetail_specs_section {
+    grid-column: 2fr;
+}
+
+.propertyDetail_specs_aside {
+    grid-column: 1fr;
+}
+
+@media (min-width: 1200px) {
+
+    .propertyDetail_container {
+        max-width: 1118px;
+        width: 100%;
+    }
+
+    .propertyDetail_specs {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .propertyDetailSidebar_specs_aside {
+        background-color: beige;
+        height: 861px;
+        width: 362px;
+    }
+
+    /* PropertyDetailSpecs Styles */
+    .propertyDetailSpecs_content {
+        height: 102px;
+        width: 100%;
+        gap: 1rem;
+    }
+
+    .propertyDetailSpecs_value {
+        gap: 2rem;
+    }
+}
