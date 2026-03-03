@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import PropertyDetail from "@/components/property/PropertyDetail";
+import PropertyDetail from "@/components/property/propertyDetail/PropertyDetail";
 import PropertiesPage from "@/components/property/PropertiesPage";
 import Subtitle from "../components/layout/Subtitle";
 
