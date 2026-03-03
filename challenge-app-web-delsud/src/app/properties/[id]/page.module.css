@@ -1,0 +1,17 @@
+.propertyCarroulsel {
+    height: 553px;
+    width: auto;
+    background-color: #EEEEEE;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (min-width: 1200px) {
+
+    .propertyCarroulsel {
+        height: 567px;
+        background-color: #F7F7FD;
+    }
+
+}
