@@ -15,37 +15,38 @@ export const properties = [
         specs: [
             { key: "bedrooms", label: "Habitaciones", value: 4, icon: icons.bed },
             { key: "bathrooms", label: "Baños", value: 2, icon: icons.bath },
-            { key: "surface", label: "Superficie Total", value: "68m2", icon: icons.surface },
+            { key: "surface", label: "Superficie Total", value: "120²", icon: icons.surface },
             { key: "spaces", label: "Ambientes", value: 4, icon: icons.space },
             { key: "antique", label: "Antiguedad", value: 10, icon: icons.time },
         ],
         price: "$154.400",
         expenses: "$3.000",
-        description: "Se trata de una propiedad distribuida en dos plantas con patio y terraza.Se ingresa desde la calle por una puerta donde esta el pasillo que desemboca en una amplia recepción, que dan a dos dormitorios al frente con baño y otro amplio. El living comedor tiene acceso a dos habitaciones abiertas, a continuación se encuentra la enfermería, el baño completo y la cocina que tiene salida al jardín. En este último tenemos lavadero, pequeño deposito y las escaleras que llevan a la terraza. En el primer piso hay 5 habitaciones más con 1 baño completo y dos toilette.Superficie del terreno 8,93 m x 33,71 mLa residencia posee en total 12 habitaciones habilitadas para 25 camas.Se entrega funcionando con personal e instalaciones.Excelente estado de conservación.",
+        description: "Se trata de una propiedad distribuida en dos plantas con patio y terraza. Se ingresa desde la calle por una puerta donde esta el pasillo que desemboca en una amplia recepción, que dan a dos dormitorios al frente con baño y otro amplio. El living comedor tiene acceso a dos habitaciones abiertas, a continuación se encuentra la enfermería, el baño completo y la cocina que tiene salida al jardín. En este último tenemos lavadero, pequeño deposito y las escaleras que llevan a la terraza. En el primer piso hay 5 habitaciones más con 1 baño completo y dos toilette. Superficie del terreno 8,93 m x 33,71 mLa residencia posee en total 12 habitaciones habilitadas para 25 camas. Se entrega funcionando con personal e instalaciones. Excelente estado de conservación.",
         generalAttributes: ["Permite mascotas", "Pileta", "Solarium", "Gimnasio", "Pisos flotantes", "Bañera", "Canchas de tenis", "Porcelanato", "Hall", "Cochera descubierta", "Estufa a gas", "Radiador", "Hidro masaje"],
         services: ["Agua corriente", "Gas natural", "Electricidad", "Calefacción", "Internet", "Seguridad", "Teléfono", "Video cable"],
         location: "Calle 39  -  La Plata, Buenos Aires.",
-
+        available: true,
+        date: "02/06/2026"
     },
     {
         id: 2,
-        image: "/images/departamento1.jpg",
+        image: "/images/departamento1.png",
         title: "Departamento 2 Habitaciones",
         type: "dapartamento",
         specs: [
             { key: "bedrooms", label: "Habitaciones", value: 4, icon: icons.bed },
             { key: "bathrooms", label: "Baños", value: 2, icon: icons.bath },
-            { key: "surface", label: "Superficie Total", value: "68m2", icon: icons.surface },
+            { key: "surface", label: "Superficie Total", value: "57²", icon: icons.surface },
             { key: "spaces", label: "Ambientes", value: 4, icon: icons.space },
-            { key: "antique", label: "Antguedad", value: 10, icon: icons.time },
+            { key: "antique", label: "Antiguedad", value: 10, icon: icons.time },
         ],
         price: "$58.400",
         expenses: "$3.000",
-        description: "Se trata de una propiedad distribuida en dos plantas con patio y terraza.Se ingresa desde la calle por una puerta donde esta el pasillo que desemboca en una amplia recepción, que dan a dos dormitorios al frente con baño y otro amplio. El living comedor tiene acceso a dos habitaciones abiertas, a continuación se encuentra la enfermería, el baño completo y la cocina que tiene salida al jardín. En este último tenemos lavadero, pequeño deposito y las escaleras que llevan a la terraza. En el primer piso hay 5 habitaciones más con 1 baño completo y dos toilette.Superficie del terreno 8,93 m x 33,71 mLa residencia posee en total 12 habitaciones habilitadas para 25 camas.Se entrega funcionando con personal e instalaciones.Excelente estado de conservación.",
-        generalAttributes: ["Permite mascotas", "Pileta", "Solarium", "Gimnasio", "Pisos flotantes", "Bañera", "Canchas de tenis", "Porcelanato", "Hall", "Cochera descubierta", "Estufa a gas", "Radiador", "Hidro masaje"],
+        description: "Se trata de una propiedad distribuida en dos plantas con patio y terraza. Se ingresa desde la calle por una puerta donde esta el pasillo que desemboca en una amplia recepción, que dan a dos dormitorios al frente con baño y otro amplio. El living comedor tiene acceso a dos habitaciones abiertas, a continuación se encuentra la enfermería, el baño completo y la cocina que tiene salida al jardín. En este último tenemos lavadero, pequeño deposito y las escaleras que llevan a la terraza. En el primer piso hay 5 habitaciones más con 1 baño completo y dos toilette. Superficie del terreno 8,93 m x 33,71 mLa residencia posee en total 12 habitaciones habilitadas para 25 camas. Se entrega funcionando con personal e instalaciones. Excelente estado de conservación.",     
         services: ["Agua corriente", "Gas natural", "Electricidad", "Calefacción", "Internet", "Seguridad", "Teléfono", "Video cable"],
         location: "Calle 39  -  La Plata, Buenos Aires.",
-
+        available: true,
+        date: "10/04/2026"
     },
     {
         id: 3,
@@ -55,17 +56,18 @@ export const properties = [
         specs: [
             { key: "bedrooms", label: "Habitaciones", value: 4, icon: icons.bed },
             { key: "bathrooms", label: "Baños", value: 2, icon: icons.bath },
-            { key: "surface", label: "Superficie Total", value: "68m2", icon: icons.surface },
+            { key: "surface", label: "Superficie Total", value: "50²", icon: icons.surface },
             { key: "spaces", label: "Ambientes", value: 4, icon: icons.space },
-            { key: "antique", label: "Antguedad", value: 10, icon: icons.time },
+            { key: "antique", label: "Antiguedad", value: 10, icon: icons.time },
         ],
         price: "$154.400",
         expenses: "$3.000",
-        description: "Se trata de una propiedad distribuida en dos plantas con patio y terraza.Se ingresa desde la calle por una puerta donde esta el pasillo que desemboca en una amplia recepción, que dan a dos dormitorios al frente con baño y otro amplio. El living comedor tiene acceso a dos habitaciones abiertas, a continuación se encuentra la enfermería, el baño completo y la cocina que tiene salida al jardín. En este último tenemos lavadero, pequeño deposito y las escaleras que llevan a la terraza. En el primer piso hay 5 habitaciones más con 1 baño completo y dos toilette.Superficie del terreno 8,93 m x 33,71 mLa residencia posee en total 12 habitaciones habilitadas para 25 camas.Se entrega funcionando con personal e instalaciones.Excelente estado de conservación.",
+        description: "Se trata de una propiedad distribuida en dos plantas con patio y terraza. Se ingresa desde la calle por una puerta donde esta el pasillo que desemboca en una amplia recepción, que dan a dos dormitorios al frente con baño y otro amplio. El living comedor tiene acceso a dos habitaciones abiertas, a continuación se encuentra la enfermería, el baño completo y la cocina que tiene salida al jardín. En este último tenemos lavadero, pequeño deposito y las escaleras que llevan a la terraza. En el primer piso hay 5 habitaciones más con 1 baño completo y dos toilette. Superficie del terreno 8,93 m x 33,71 mLa residencia posee en total 12 habitaciones habilitadas para 25 camas. Se entrega funcionando con personal e instalaciones. Excelente estado de conservación.",
         generalAttributes: ["Permite mascotas", "Pileta", "Solarium", "Gimnasio", "Pisos flotantes", "Bañera", "Canchas de tenis", "Porcelanato", "Hall", "Cochera descubierta", "Estufa a gas", "Radiador", "Hidro masaje"],
         services: ["Agua corriente", "Gas natural", "Electricidad", "Calefacción", "Internet", "Seguridad", "Teléfono", "Video cable"],
         location: "Calle 39  -  La Plata, Buenos Aires.",
-
+        available: false,
+        date: "11/05/2026"
     },
     {
         id: 4,
@@ -75,17 +77,18 @@ export const properties = [
         specs: [
             { key: "bedrooms", label: "Habitaciones", value: 4, icon: icons.bed },
             { key: "bathrooms", label: "Baños", value: 2, icon: icons.bath },
-            { key: "surface", label: "Superficie Total", value: "68m2", icon: icons.surface },
+            { key: "surface", label: "Superficie Total", value: "68²", icon: icons.surface },
             { key: "spaces", label: "Ambientes", value: 4, icon: icons.space },
             { key: "antique", label: "Antiguedad", value: 10, icon: icons.time },
         ],
         price: "$154.400",
         expenses: "$3.000",
-        description: "Se trata de una propiedad distribuida en dos plantas con patio y terraza.Se ingresa desde la calle por una puerta donde esta el pasillo que desemboca en una amplia recepción, que dan a dos dormitorios al frente con baño y otro amplio. El living comedor tiene acceso a dos habitaciones abiertas, a continuación se encuentra la enfermería, el baño completo y la cocina que tiene salida al jardín. En este último tenemos lavadero, pequeño deposito y las escaleras que llevan a la terraza. En el primer piso hay 5 habitaciones más con 1 baño completo y dos toilette.Superficie del terreno 8,93 m x 33,71 mLa residencia posee en total 12 habitaciones habilitadas para 25 camas.Se entrega funcionando con personal e instalaciones.Excelente estado de conservación.",
+        description: "Se trata de una propiedad distribuida en dos plantas con patio y terraza. Se ingresa desde la calle por una puerta donde esta el pasillo que desemboca en una amplia recepción, que dan a dos dormitorios al frente con baño y otro amplio. El living comedor tiene acceso a dos habitaciones abiertas, a continuación se encuentra la enfermería, el baño completo y la cocina que tiene salida al jardín. En este último tenemos lavadero, pequeño deposito y las escaleras que llevan a la terraza. En el primer piso hay 5 habitaciones más con 1 baño completo y dos toilette. Superficie del terreno 8,93 m x 33,71 mLa residencia posee en total 12 habitaciones habilitadas para 25 camas. Se entrega funcionando con personal e instalaciones. Excelente estado de conservación.",
         generalAttributes: ["Permite mascotas", "Pileta", "Solarium", "Gimnasio", "Pisos flotantes", "Bañera", "Canchas de tenis", "Porcelanato", "Hall", "Cochera descubierta", "Estufa a gas", "Radiador", "Hidro masaje"],
         services: ["Agua corriente", "Gas natural", "Electricidad", "Calefacción", "Internet", "Seguridad", "Teléfono", "Video cable"],
         location: "Calle 39  -  La Plata, Buenos Aires.",
-
+        available: false,
+        date: "15/03/2026"
     },
     {
         id: 5,
@@ -95,17 +98,18 @@ export const properties = [
         specs: [
             { key: "bedrooms", label: "Habitaciones", value: 4, icon: icons.bed },
             { key: "bathrooms", label: "Baños", value: 2, icon: icons.bath },
-            { key: "surface", label: "Superficie Total", value: "68m2", icon: icons.surface },
+            { key: "surface", label: "Superficie Total", value: "72²", icon: icons.surface },
             { key: "spaces", label: "Ambientes", value: 4, icon: icons.space },
-            { key: "antique", label: "Antguedad", value: 10, icon: icons.time },
+            { key: "antique", label: "Antiguedad", value: 10, icon: icons.time },
         ],
         price: "$154.400",
         expenses: "$3.000",
-        description: "Se trata de una propiedad distribuida en dos plantas con patio y terraza.Se ingresa desde la calle por una puerta donde esta el pasillo que desemboca en una amplia recepción, que dan a dos dormitorios al frente con baño y otro amplio. El living comedor tiene acceso a dos habitaciones abiertas, a continuación se encuentra la enfermería, el baño completo y la cocina que tiene salida al jardín. En este último tenemos lavadero, pequeño deposito y las escaleras que llevan a la terraza. En el primer piso hay 5 habitaciones más con 1 baño completo y dos toilette.Superficie del terreno 8,93 m x 33,71 mLa residencia posee en total 12 habitaciones habilitadas para 25 camas.Se entrega funcionando con personal e instalaciones.Excelente estado de conservación.",
+        description: "Se trata de una propiedad distribuida en dos plantas con patio y terraza. Se ingresa desde la calle por una puerta donde esta el pasillo que desemboca en una amplia recepción, que dan a dos dormitorios al frente con baño y otro amplio. El living comedor tiene acceso a dos habitaciones abiertas, a continuación se encuentra la enfermería, el baño completo y la cocina que tiene salida al jardín. En este último tenemos lavadero, pequeño deposito y las escaleras que llevan a la terraza. En el primer piso hay 5 habitaciones más con 1 baño completo y dos toilette. Superficie del terreno 8,93 m x 33,71 mLa residencia posee en total 12 habitaciones habilitadas para 25 camas. Se entrega funcionando con personal e instalaciones. Excelente estado de conservación.",
         generalAttributes: ["Permite mascotas", "Pileta", "Solarium", "Gimnasio", "Pisos flotantes", "Bañera", "Canchas de tenis", "Porcelanato", "Hall", "Cochera descubierta", "Estufa a gas", "Radiador", "Hidro masaje"],
         services: ["Agua corriente", "Gas natural", "Electricidad", "Calefacción", "Internet", "Seguridad", "Teléfono", "Video cable"],
         location: "Calle 39  -  La Plata, Buenos Aires.",
-
+        available: true,
+        date: "20/03/2026"
     },
     {
         id: 6,
@@ -115,17 +119,18 @@ export const properties = [
         specs: [
             { key: "bedrooms", label: "Habitaciones", value: 4, icon: icons.bed },
             { key: "bathrooms", label: "Baños", value: 2, icon: icons.bath },
-            { key: "surface", label: "Superficie Total", value: "68m2", icon: icons.surface },
+            { key: "surface", label: "Superficie Total", value: "75²", icon: icons.surface },
             { key: "spaces", label: "Ambientes", value: 4, icon: icons.space },
-            { key: "antique", label: "Antguedad", value: 10, icon: icons.time },
+            { key: "antique", label: "Antiguedad", value: 10, icon: icons.time },
         ],
         price: "$154.400",
         expenses: "$3.000",
-        description: "Se trata de una propiedad distribuida en dos plantas con patio y terraza.Se ingresa desde la calle por una puerta donde esta el pasillo que desemboca en una amplia recepción, que dan a dos dormitorios al frente con baño y otro amplio. El living comedor tiene acceso a dos habitaciones abiertas, a continuación se encuentra la enfermería, el baño completo y la cocina que tiene salida al jardín. En este último tenemos lavadero, pequeño deposito y las escaleras que llevan a la terraza. En el primer piso hay 5 habitaciones más con 1 baño completo y dos toilette.Superficie del terreno 8,93 m x 33,71 mLa residencia posee en total 12 habitaciones habilitadas para 25 camas.Se entrega funcionando con personal e instalaciones.Excelente estado de conservación.",
+        description: "Se trata de una propiedad distribuida en dos plantas con patio y terraza. Se ingresa desde la calle por una puerta donde esta el pasillo que desemboca en una amplia recepción, que dan a dos dormitorios al frente con baño y otro amplio. El living comedor tiene acceso a dos habitaciones abiertas, a continuación se encuentra la enfermería, el baño completo y la cocina que tiene salida al jardín. En este último tenemos lavadero, pequeño deposito y las escaleras que llevan a la terraza. En el primer piso hay 5 habitaciones más con 1 baño completo y dos toilette. Superficie del terreno 8,93 m x 33,71 mLa residencia posee en total 12 habitaciones habilitadas para 25 camas. Se entrega funcionando con personal e instalaciones. Excelente estado de conservación.",
         generalAttributes: ["Permite mascotas", "Pileta", "Solarium", "Gimnasio", "Pisos flotantes", "Bañera", "Canchas de tenis", "Porcelanato", "Hall", "Cochera descubierta", "Estufa a gas", "Radiador", "Hidro masaje"],
         services: ["Agua corriente", "Gas natural", "Electricidad", "Calefacción", "Internet", "Seguridad", "Teléfono", "Video cable"],
         location: "Calle 39  -  La Plata, Buenos Aires.",
-
+        available: true,
+        date: "22/06/2026"
     },
     {
         id: 7,
@@ -135,16 +140,17 @@ export const properties = [
         specs: [
             { key: "bedrooms", label: "Habitaciones", value: 4, icon: icons.bed },
             { key: "bathrooms", label: "Baños", value: 2, icon: icons.bath },
-            { key: "surface", label: "Superficie Total", value: "68m2", icon: icons.surface },
+            { key: "surface", label: "Superficie Total", value: "80²", icon: icons.surface },
             { key: "spaces", label: "Ambientes", value: 4, icon: icons.space },
-            { key: "antique", label: "Antguedad", value: 10, icon: icons.time },
+            { key: "antique", label: "Antiguedad", value: 10, icon: icons.time },
         ],
         price: "$154.400",
         expenses: "$3.000",
-        description: "Se trata de una propiedad distribuida en dos plantas con patio y terraza.Se ingresa desde la calle por una puerta donde esta el pasillo que desemboca en una amplia recepción, que dan a dos dormitorios al frente con baño y otro amplio. El living comedor tiene acceso a dos habitaciones abiertas, a continuación se encuentra la enfermería, el baño completo y la cocina que tiene salida al jardín. En este último tenemos lavadero, pequeño deposito y las escaleras que llevan a la terraza. En el primer piso hay 5 habitaciones más con 1 baño completo y dos toilette.Superficie del terreno 8,93 m x 33,71 mLa residencia posee en total 12 habitaciones habilitadas para 25 camas.Se entrega funcionando con personal e instalaciones.Excelente estado de conservación.",
+        description: "Se trata de una propiedad distribuida en dos plantas con patio y terraza. Se ingresa desde la calle por una puerta donde esta el pasillo que desemboca en una amplia recepción, que dan a dos dormitorios al frente con baño y otro amplio. El living comedor tiene acceso a dos habitaciones abiertas, a continuación se encuentra la enfermería, el baño completo y la cocina que tiene salida al jardín. En este último tenemos lavadero, pequeño deposito y las escaleras que llevan a la terraza. En el primer piso hay 5 habitaciones más con 1 baño completo y dos toilette. Superficie del terreno 8,93 m x 33,71 mLa residencia posee en total 12 habitaciones habilitadas para 25 camas. Se entrega funcionando con personal e instalaciones. Excelente estado de conservación.",
         generalAttributes: ["Permite mascotas", "Pileta", "Solarium", "Gimnasio", "Pisos flotantes", "Bañera", "Canchas de tenis", "Porcelanato", "Hall", "Cochera descubierta", "Estufa a gas", "Radiador", "Hidro masaje"],
         services: ["Agua corriente", "Gas natural", "Electricidad", "Calefacción", "Internet", "Seguridad", "Teléfono", "Video cable"],
         location: "Calle 39  -  La Plata, Buenos Aires.",
-
+        available: false,
+        date: "7/11/2026"
     },
 ]

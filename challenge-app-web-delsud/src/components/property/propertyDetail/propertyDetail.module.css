@@ -1,3 +1,5 @@
+@import '../../../styles/variables.css';
+
 .propertyDetail_container {
     display: flex;
     flex-direction: column;
@@ -7,16 +9,44 @@
     min-width: 326px;
     margin: 0 auto;
     padding: 0 24px;
+    padding-bottom: 5rem;
+    padding-top: 3rem;
+    gap: 2rem;
+}
+
+.propertyDetailHero_header_container {
+    height: 118px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    left: 0;
+    gap: 1rem;
+}
+
+.propertyDetailHero_header_info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.propertyDetailHero_header_actions {
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
 }
 
 .propertyDetail_image {
     min-width: 100px;
     position: "relative";
     width: 100%;
+    max-width: 1118px;
     height: 327px; 
 }
 
-.propertyDetail_specs {
+.propertyDetail_sections {
     display: flex;
     flex-direction: column;
     max-width: 1118px;
@@ -24,7 +54,37 @@
 
 .propertyDetail_specsItems {
     display: flex;
+    flex-direction: column;
+}
+
+/* PropertyDetailsSpecs Component Styles */
+.propertyDetailSpecs_container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.propertyDetailSpecs_badges {
+    display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.propertyDetailSpecs_specs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 0.5rem;
+    width: 100%;
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+}
+
+.propertyDetail_complements {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
 }
 
 /* PropertyDetailSpecs Styles */
@@ -41,15 +101,115 @@
 .propertyDetailSpecs_value {
     display: flex;
     flex-direction: row;
-    gap: 2rem;
 }
 
 .propertyDetail_specs_section {
+    display: grid;
     grid-column: 2fr;
+    gap: 2rem;
+}
+
+.propertyDetail_components {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .propertyDetail_specs_aside {
     grid-column: 1fr;
+}
+
+/* PropertySidebar Component Styles */
+.propertyDetailSidebar_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.propertyDetailSidebar_price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding-left: 2rem;
+    height: 146px;
+    width: 100%;
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    gap: 0.5rem;
+}
+
+/* Texts & Buttons Styles */
+.color_secondary {
+    color: var(--color-secondary);
+}
+
+.text_badges {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.text_content {
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.text_description {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    line-height: 180%;
+}
+
+.text_general {
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 150%;
+}
+
+.text_amount {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.text_price {
+    color: var(--color-secondary);
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.button_return {
+    height: 30px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: transparent;
+    border: none;
+    color: var(--color-secondary);
+}
+
+.icon_return {
+    height: 25px;
+    width: 22px;
+}
+
+.available_button {
+    font-size: 16px;
+    font-weight: 700;
+    height: 32px;
+    width: 260px;
+    color: #FFFFFF;
+    background-color: var(--color-secondary);
+    border: none;
+    border-radius: 23px;
+}
+
+.button_actions {
+    height: 30px;
+    width: 30px;
 }
 
 @media (min-width: 1200px) {
@@ -59,16 +219,21 @@
         width: 100%;
     }
 
-    .propertyDetail_specs {
-        display: flex;
+    .propertyDetailHero_header_container {
+        height: 132px;
         flex-direction: row;
+    }
+
+    .propertyDetail_sections {
+        display: grid;
+        grid-template-columns: 2.75fr 1.25fr;
+        gap: 2rem;
 
     }
 
-    .propertyDetailSidebar_specs_aside {
-        background-color: beige;
+    .propertyDetail_specs_aside {
         height: 861px;
-        width: 362px;
+        width: auto;
     }
 
     /* PropertyDetailSpecs Styles */
@@ -81,4 +246,27 @@
     .propertyDetailSpecs_value {
         gap: 2rem;
     }
+
+
+    .available_button {
+        font-size: 18px;
+        font-weight: 700;
+        height: 39px;
+        width: 318px;
+        color: #FFFFFF;
+        background-color: var(--color-secondary);
+        border: none;
+        border-radius: 23px;
+    }
+
+    .icon_return {
+        height: 27px;
+        width: 24px;
+    }
+
+    .button_actions {
+        height: 40px;
+        width: 37px;
+    }
+
 }

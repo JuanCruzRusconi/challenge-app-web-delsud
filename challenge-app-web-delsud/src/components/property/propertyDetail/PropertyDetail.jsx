@@ -1,4 +1,4 @@
-import PropertyDetailHero from "./PropertyHero";
+import PropertyDetailHero from "./PropertyDetailHero";
 import PropertySubtitle from "../PropertySubtitle";
 import PropertyDetailSpecs from "./PropertyDetailSpecs";
 import PropertyDetailDescription from "./PropertyDetailDescription";
@@ -12,31 +12,40 @@ const PropertyDetail = ({ property }) => {
 
     return (
         <article key={property.id} className={styles.propertyDetail_container}>
-            <PropertyDetailHero title={property.title} image={property.image} />
-            <div className={styles.propertyDetail_specs}>
+            <PropertyDetailHero 
+                title={property.title} 
+                image={property.image} 
+                location={property.location}
+                available={property.available} 
+            />
+            <div className={styles.propertyDetail_sections}>
                 <section className={styles.propertyDetail_specs_section}>
                     <div className={styles.propertyDetail_specsItems}>
                         <PropertyDetailSpecs specs={property.specs} />
                     </div>
-                    <div>
+                    <div className={styles.propertyDetail_components}>
                         <PropertySubtitle text="Descripción" />
                         <PropertyDetailDescription text={property.description} />
                     </div>
-                    <div>
+                    <div className={styles.propertyDetail_components}>
                         <PropertySubtitle text="Atributos Generales" />
                         <PropertyDetailAttributes attributes={property.generalAttributes} />
                     </div>
-                    <div>
+                    <div className={styles.propertyDetail_components}>
                         <PropertySubtitle text="Servicios" />
                         <PropertyDetailServices services={property.services} />
                     </div>
-                    <div>
+                    <div className={styles.propertyDetail_components}>
                         <PropertySubtitle text="Ubicación en el mapa" />
                         <PropertyDetailLocation location={property.location} />
                     </div>
                 </section>
                 <aside className={styles.propertyDetail_specs_aside}>
-                    <PropertyDetailSidebar />
+                    <PropertyDetailSidebar 
+                        price={property.price} 
+                        expenses={property.expenses} 
+                        date={property.date}
+                    />
                 </aside>
             </div>
         </article>

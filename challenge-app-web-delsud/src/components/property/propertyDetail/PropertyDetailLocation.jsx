@@ -1,7 +1,11 @@
+import styles from "./propertyDetail.module.css"
+
 const PropertyDetailLocation = ({ location }) => {
 
     return (
-        <p>{location}</p>
+        <p className={styles.text_general}>
+            {location}
+        </p>
     );
 }
 

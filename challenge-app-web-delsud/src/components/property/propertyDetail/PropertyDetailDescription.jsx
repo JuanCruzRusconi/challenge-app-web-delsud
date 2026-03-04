@@ -3,7 +3,7 @@ import styles from "./propertyDetail.module.css";
 const PropertyDetailDescription = ({ text }) => {
 
     return (
-        <p>{text}</p>
+        <p className={styles.text_description}>{text}</p>
     );
 }
 
