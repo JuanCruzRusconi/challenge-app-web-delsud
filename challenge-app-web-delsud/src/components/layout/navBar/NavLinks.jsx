@@ -3,10 +3,10 @@ const NavLinks = () => {
 
     return (
         <ul className={styles.navlinks_container}>
-            <li>Buscar Alquiler</li>
-            <li>Comprar Garantía</li>
-            <li>Ser Agente</li>
-            <li>Propietarios</li>
+            <li className={styles.navlinks_item}>Buscar Alquiler</li>
+            <li className={styles.navlinks_item}>Comprar Garantía</li>
+            <li className={styles.navlinks_item}>Ser Agente</li>
+            <li className={styles.navlinks_item}>Propietarios</li>
         </ul>
     )
 }

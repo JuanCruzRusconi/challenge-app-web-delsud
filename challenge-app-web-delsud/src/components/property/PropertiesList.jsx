@@ -6,7 +6,6 @@ const PropertyList = ({ properties }) => {
 
     return (
         <section className={styles.proertyList_container}>
-            <Subtitle className={styles.proertyList_subtitle} />
             <div className={styles.propertyList_cards_container}>
                 {properties.map(property => (
                     <PropertyCard 

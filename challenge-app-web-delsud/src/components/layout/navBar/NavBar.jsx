@@ -1,7 +1,7 @@
 import NavActions from "./NavActions";
 import NavLinks from "./NavLinks";
 import styles from "./navBar.module.css";
-import Brand from "../Brand";
+import Brand from "../../common/Brand";
 
 const NavBar = () => {
 

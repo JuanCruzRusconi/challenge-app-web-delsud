@@ -1,0 +1,16 @@
+@import "../../styles/variables.css";
+
+.brand_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.brand {
+    color: var(--color-secondary);
+    font-weight: 800;
+    font-size: 1rem;
+    letter-spacing: -2%;
+}

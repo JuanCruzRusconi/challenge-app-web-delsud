@@ -9,7 +9,6 @@ export default function Home() {
     return (
     
         <main className={styles.main_container}>
-            <Subtitle text="Propiedades disponibles" />
             <PropertiesPage />
         </main>
 

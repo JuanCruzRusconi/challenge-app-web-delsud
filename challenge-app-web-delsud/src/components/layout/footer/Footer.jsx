@@ -1,4 +1,4 @@
-import Brand from "../Brand";
+import Brand from "../../common/Brand";
 import FooterCopy from "./FooterCopy";
 import FooterSections from "./FooterSections";
 import styles from "./footer.module.css";

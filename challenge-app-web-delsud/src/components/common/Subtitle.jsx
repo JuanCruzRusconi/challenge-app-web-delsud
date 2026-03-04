@@ -1,7 +1,7 @@
-const PropertySubtitle = ({text}) => {
+const PropertySubtitle = ({ text }) => {
 
     return (
-        <h4>{text}</h4>
+        <h2>{text}</h2>
     )
 }
 

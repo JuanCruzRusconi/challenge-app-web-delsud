@@ -1,3 +1,4 @@
+import Image from "next/image";
 import styles from "./common.module.css";
 import { Montserrat } from "next/font/google";
 
@@ -7,11 +8,14 @@ const montserratFont = Montserrat({
   weight: ["800"],
 });
 
-const Brand = () => {
+const Brand = ({ color }) => {
 
     return (
         <div className={styles.brand_container}>
-            <p className={montserratFont.variable .brand}>LOGO EMPRESA</p>
+            <Image src="/icons/RectangleLogo.png" alt="logo"
+            height={16}
+            width={16}/>
+            <p className={`${montserratFont.variable} ${styles.brand}`}>LOGO EMPRESA</p>
         </div>
     )
 }

@@ -1,19 +1,35 @@
-.properties_container {
+.propertiesPage_container {
+    display: flex;
+    flex-direction: column;
     height: auto;
+    width: auto;
     padding-top: 2rem;
     padding-bottom: 3rem;
+    background-color: #F7F7FD;
+    gap: 2rem;
+    margin-top: 2rem;
+    border-radius: 32px;
+    border: 1px solid var(--color-secondary);
 }
 
 .propertySubtitle {
     font-size: 24px;
     font-weight: 700;
+    left: 2rem;
+}
+
+.propertiesPage_subtitle {
+    font-size: 32px;
+    margin-left: 4rem;
 }
 
 /* CARDS LIST STYLES */
 .proertyList_container {
     width: 100dvw;
     display: flex;
-    flex-direction: column;        
+    flex-direction: column;   
+    justify-content: center;
+    align-items: center;     
     gap: 1rem;
 }
 
@@ -59,19 +75,23 @@
     justify-content: center;
     align-items: center;
     overflow-x: auto;
-    flex-wrap: nowrap;
+    overflow-y: hidden;
 }
 
 .propertiesCarrousel_cards_container {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    gap: 0.5rem;
+    justify-content: flex-start;
+    gap: 1rem;
+    scroll-snap-type: x mandatory;
 }
 
 @media (min-width: 1200px) {
 
     .proertyList_container {
+        flex-direction: column;  
+        flex-wrap: wrap;
         gap: 2rem;
     }
 
@@ -85,6 +105,7 @@
     .propertiesCarrousel_container {
         height: 493px;
         gap: 1rem;
+        padding-left: 40rem;
     }
 
     .propertiesCarrousel_cards_container {

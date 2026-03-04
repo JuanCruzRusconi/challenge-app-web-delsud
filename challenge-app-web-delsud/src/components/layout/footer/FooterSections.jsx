@@ -1,4 +1,4 @@
-import Subtitle from "../Subtitle";
+import Subtitle from "../../common/Subtitle";
 import FooterLinks from "./FooterLinks";
 import styles from "./footer.module.css";
 
