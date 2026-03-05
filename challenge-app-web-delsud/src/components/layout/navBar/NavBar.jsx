@@ -1,20 +1,23 @@
+import Brand from "../../common/Brand";
 import NavActions from "./NavActions";
 import NavLinks from "./NavLinks";
 import styles from "./navBar.module.css";
-import Brand from "../../common/Brand";
 
 const NavBar = () => {
 
     return ( 
-        <header className={styles.header_container}>
-            <nav className={styles.nav_container}>
-                <Brand />
+        <>
+            <header className={styles.header_container}>
+                <nav className={styles.nav_container}>
+                    <Brand />
+            
+                    <NavLinks />
 
-                <NavLinks />
-
-                <NavActions />
-            </nav>
-        </header>
+                    <NavActions />
+                </nav>
+            </header>
+            <hr className={styles.header_divider}></hr>
+        </>
     );
 }
 

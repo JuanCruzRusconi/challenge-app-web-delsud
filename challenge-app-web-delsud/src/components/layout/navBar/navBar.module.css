@@ -1,8 +1,7 @@
 @import '../../../styles/variables.css';
 
 .header_container {
-    height: 72px;
-    width: 100dvw;
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -10,12 +9,18 @@
 }
 
 .nav_container {
+    height: 72px;
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-around;
-    width: auto;
+    align-items: center;
+    width: 85%;
     gap: 80px;
+}
+
+.header_divider {
+    width: 100%;
+    border-top: 1px solid var(--color-fourth);
 }
 
 .logo_container {
@@ -64,7 +69,14 @@
 @media (min-width: 1200px) {
     
     .header_container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav_container {
         height: 96px;
+        padding: 0 4rem;
     }
 
     .logo_container {
@@ -72,17 +84,25 @@
     }
 
     .navlinks_container {
-        flex: 1;
+        flex: 2;
         display: flex;
         flex-direction: row;
+    }
+
+    .navlinks_item {
+        font-size: 1rem;
+        flex: 1;
+        display: flex;
+        justify-content: center;
         align-items: center;
-        justify-content: space-around;
+        width: 140px;
     }
 
     .navActions_container {
-        flex: 0.5;
+        flex: 1.5;
         display: flex;
         flex-direction: row;
+        justify-content: flex-end;
         gap: 1rem;
     }
 

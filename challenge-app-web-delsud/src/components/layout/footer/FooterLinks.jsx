@@ -6,7 +6,7 @@ const FooterLinks = ({ links }) => {
         <div className={styles.footer_links}>
             {links.map(link => (
                 <li key={link.text}>
-                    <a href="{link.url}">{link.text}</a>
+                    <a className={styles.text_links} href="{link.url}">{link.text}</a>
                 </li>
             ))}
         </div>

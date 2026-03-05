@@ -1,12 +1,20 @@
+import styles from "./footer.module.css";
+
 const FooterCopy = () => {
 
     return (
-        <div>
-            <p>©2022 Example. Todos los derechos reservados.</p>
-            <p>w</p>
-            <p>w</p>
-            <p>w</p>
-        </div>
+        <>
+        <hr className={styles.footerCopy_divider} />
+        <section className={styles.footerCopy_container}>
+            <p className={styles.footerCopy_text}>©2022 Example. Todos los derechos reservados.</p>
+            <div className={styles.footerCopy_icons}>
+                <img className={styles.footerCopy_logo} src="/icons/facebook.png"></img>
+                <img className={styles.footerCopy_logo} src="/icons/instagram.png"></img>
+                <img className={styles.footerCopy_logo} src="/icons/twitter.png"></img>
+                <img className={styles.footerCopy_logo} src="/icons/linkedin.png"></img>
+            </div>
+        </section>
+        </>
     );
 }
 

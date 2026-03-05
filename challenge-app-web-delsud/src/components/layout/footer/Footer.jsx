@@ -15,17 +15,17 @@ const footerSections = [
     {   
         title: "SER UN AGENTE",
         links: [
-            { text: "¿Qué es un agente?", url: "#" },
-            { text: "¿Cómo ser un agente", url: "#" },
-            { text: "¿Cuánto gana un agente?", url: "#" }
+            { text: "¿Qué es un agente?", url: "/" },
+            { text: "¿Cómo ser un agente", url: "/" },
+            { text: "¿Cuánto gana un agente?", url: "/" }
         ]
     },
     {   
         title: "CONTACTO",
         links: [
-            { text: "Whatsapp", url: "#" },
-            { text: "example@example.com.ar", url: "#" },
-            { text: "Soporte técnico", url: "#" }
+            { text: "Whatsapp", url: "/" },
+            { text: "example@example.com.ar", url: "/" },
+            { text: "Soporte técnico", url: "/" }
         ]
     }
 ];
