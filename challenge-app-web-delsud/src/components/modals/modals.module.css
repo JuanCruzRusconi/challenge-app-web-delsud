@@ -1,0 +1,413 @@
+@import "../../styles/variables.css";
+
+/* HeaderModal Component Styles */
+.headerModals_content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* WarrandtyModal Component Styles */
+.warrantyModal_container {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 376px;
+    width: 327px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFFFFF;
+    background-color: var(--color-secondary);
+    border-radius: 8px;
+    z-index: 1000;
+}
+
+.warrantyModal_content {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 160%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    gap: 1.5rem;
+}
+
+/* ConsultationModal Component Styles */
+.consultationModal_container {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 327px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFFFFF;
+    background-color: var(--color-fourth);
+    border-radius: 8px;
+    z-index: 1000;
+}
+
+.consultationModal_content {
+    width: 100%;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 160%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    gap: 1.5rem;
+}
+
+.consultModal_value {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.consultModal_input {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 150px;
+    width: 100%;
+    border-radius: 8px;
+    border: none;
+    padding-left: 0.5rem;
+}
+
+/* Report Component Styles */
+.reportModal_container {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 550px;
+    width: 327px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    z-index: 1000;
+}
+
+.reportModal_content {
+    height: 100%;
+    width: 100%;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 160%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    gap: 1.5rem;
+}
+
+.reportModal_form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.reportModal_text {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+}
+
+.reportModal_input {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+    border-radius: 2px;
+    border: 1px solid var(--color-border);
+    padding-left: 0.5rem;
+}
+
+.reportModal_send {
+    height: 56px;
+    width: 100%;
+    font-size: 1rem;
+    color: #FFFFFF;
+    background-color: var(--color-secondary);
+    border: none;
+    border-radius: 8px;
+}
+
+/* OwnerModal Component Styles */
+.ownerModal_container {
+    position: fixed;
+    height: 492px;
+    width: 327px;
+    position: fixed;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    z-index: 1000;
+}
+
+.ownerModal_content {
+    height: 100%;
+    width: 100%;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 160%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    gap: 1.5rem;
+}
+
+.ownerModal_info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Share Component Styles */
+.shareModal_container {
+    position: fixed;
+    height: 356px;
+    width: 295px;
+    position: fixed;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    z-index: 1000; 
+}
+
+.shareModal_content {
+    height: 100%;
+    width: 100%;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 160%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    gap: 1.5rem;
+}
+
+.shareButtons_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.shareModal_text {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.share_button {
+    color: var(--color-secondary);
+    font-size: 14px;
+    font-weight: 500;
+    height: 42px;
+    width: 200px;
+    background-color: transparent;
+    border: 1px solid var(--color-secondary);
+    border-radius: 8px;
+}
+
+/* InterestedModal Component Styles */
+.interestedModal_container {
+    height: 200px;
+    width: 326px;
+    position: fixed;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    z-index: 1000; 
+}
+
+.interestedModal_content {
+    display: flex;
+    flex-direction: column;
+}
+
+.interestedModal_options {
+    display: flex;
+    flex-direction: row;
+}
+
+.interestedModal_button {
+    height: 30px;
+    width: 150px;
+}
+/* Buttons Styles */
+.brand {
+    font-size: 18px;
+}
+
+.button_moreInfo {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 150%;
+    color: var(--color-secondary);
+    height: 48px;
+    width: 273px;
+    background-color: var(--color-fourth);
+    border-radius: 8px;
+    border-color: transparent;
+}
+
+.button_closePrimary {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.button_closeSecondary {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+@media (min-width: 1200px) {
+
+    /* WarrandtyModal Component Styles */
+    .warrantyModal_container {
+        height: 516px;
+        width: 798px;
+        border-radius: 20px;
+    }
+
+    .warrantyModal_content {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 180%;
+        padding: 7rem;
+        gap: 2.5rem; 
+    }
+
+    /* ReportModal Component Styles */
+    .reportModal_container {
+        height: 651px;
+        width: 542px;
+        border-radius: 20px;
+    }
+
+    .reportModal_content {
+        height: 100%;
+        width: 100%;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 160%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        gap: 1.5rem;
+    }
+
+    /* ConsultModal Component Styles */
+    .consultationModal_container {
+        height: 455px;
+        width: 541px;
+    }
+
+    /* OwnerModal Component Styles */
+    .ownerModal_container {
+        height: 423px;
+        width: 601px;
+    }
+
+    /* ShareModal Component Styles */
+    .shareModal_container {
+        height: 326px;
+        width: 500px;
+        border-radius:32px;
+    }
+
+    .shareModal_content {
+        height: 100%;
+        width: 100%;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 160%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        gap: 1.5rem;
+    }
+
+    .shareModal_text {
+        font-size: 1rem;
+    }
+
+    .share_button {
+        font-size: 1rem;
+        height: 45px;
+        width: 233px;
+    }
+
+    .brand {
+        font-size: 25px;
+    }
+
+    .button_moreInfo {
+        width: 450px;
+    }
+
+    .button_close {
+        font-size: 1.5rem;
+    }
+
+}
