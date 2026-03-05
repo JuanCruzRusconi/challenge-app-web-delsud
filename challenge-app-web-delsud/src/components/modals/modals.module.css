@@ -254,7 +254,7 @@
 
 /* InterestedModal Component Styles */
 .interestedModal_container {
-    height: 200px;
+    height: 240px;
     width: 326px;
     position: fixed;
     inset: 0;
@@ -271,13 +271,31 @@
 }
 
 .interestedModal_content {
+    height: 100%;
+    width: 100%;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 160%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    gap: 1.5rem;
 }
 
 .interestedModal_options {
+    width: 80%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.interestedModal_content {
+    display: flex;
+    flex-direction: column;
 }
 
 .interestedModal_button {

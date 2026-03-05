@@ -3,7 +3,7 @@ import styles from "./common.module.css";
 const Subtitle = ({ text }) => {
 
     return (
-        <h4 className={styles.subtitle_text}>{text}</h4>
+        <h3 className={styles.subtitle_text}>{text}</h3>
     )
 }
 

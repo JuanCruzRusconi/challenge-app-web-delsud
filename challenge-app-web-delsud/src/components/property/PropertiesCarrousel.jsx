@@ -9,7 +9,7 @@ const PropertiesCarroulsel = ({ properties }) => {
     
     return (
         <div className={styles.propertiesCarrousel_container}>
-            <div>
+            <div className={styles.propertiesCarrousel_title}>
                 <PropertySubtitle text="Propiedades que podrían interesarte" />
             </div>
             <div className={styles.propertiesCarrousel_cards_container}>

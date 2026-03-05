@@ -6,10 +6,10 @@ const InterestedModal = ({ onClose }) => {
     return (
         <div className={styles.interestedModal_container} onClick={onClose}>
             <div className={styles.interestedModal_content} onClick={(e) => e.stopPropagation()}>
-                <button onClick={onClose}>X</button>
+                <button className={styles.button_closePrimary} onClick={onClose}>X</button>
                 <div className={styles.interestedModal_options}>
-                    <button className={styles.interestedModal_button}>Consultar</button>
-                    <button className={styles.interestedModal_button}>Quiero Alquilar</button>
+                    <button className={styles.reportModal_send}>Consultar</button>
+                    <button className={styles.reportModal_send}>Quiero Alquilar</button>
                 </div>
             </div>
         </div>
