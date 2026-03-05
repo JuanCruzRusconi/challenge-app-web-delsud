@@ -191,10 +191,10 @@
     line-height: 150%;
     height: 100%;
     width: 326px;
-    color: #FFFFFF;
-    background-color: var(--color-secondary);
+    color: var(--color-secondary);
+    background-color: #FFFFFF;
+    border: 1px solid var(--color-secondary);
     border-radius: 8px;
-    border: none;
 }
 
 .propertyDetailSidebar_date_warranty {
@@ -208,6 +208,17 @@
     justify-content: center;
     align-items: center;
     gap: 1rem;
+}
+
+.propertyDetailSidebar_date_element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.date_icon {
+    height: 20px;
+    width: 20px;
 }
 
 .propertyDetailSidebar_divider {
@@ -240,6 +251,39 @@
     gap: 0.25rem;
 }
 
+.propertyDetailSidebar_owner_content {
+    height: 144px;
+    width: 326px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 1rem;
+    gap: 1rem;
+    border: 1px solid var(--color-border);
+}
+
+.propertyDetailSidebar_owner_title {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 150%;
+    color: var(--color-secondary);
+}
+
+.propertyDetailSidebar_owner_text {
+    font-size: 12px;
+    font-weight: 200;
+}
+
+.propertyDetailSidebar_owner_frame {
+    width: 95%;
+}
+
+.propertyDetailSidebar_owner_data {
+    font-size: 16px;
+}
+
 .propertyDetailSidebar_rentAmount_text {
     font-size: 1rem;
     font-weight: 400;
@@ -254,6 +298,22 @@
 .propertyDetailSidebar_rentAmount_advise {
     font-size: 10px;
     font-weight: 200;
+}
+
+.propertyDetailSidebar_report {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.propertyDetailSidebar_report_content{
+    display: flex;
+    flex-direction: column;
+    width: 326px;
+    gap: 1rem;
+}
+
+.propertyDetailSidebar_report_text{
+    padding-top: 1.5rem;
 }
 
 /* Texts & Buttons Styles */
@@ -483,7 +543,7 @@
 
     .propertyDetailSidebar_apply_consult_container {
         height: 56px;
-        width: 350px;
+        width: 326px;
     }
 
     .propertyDetailSidebar_apply_consult_button {
@@ -492,6 +552,8 @@
         line-height: 150%;
         height: 100%;
         width: 100%;
+        color: #FFFFFF;
+        background-color: var(--color-secondary);
     }
 
     .propertyDetailSidebar_rentAmount {
@@ -510,6 +572,10 @@
     .propertyDetailSidebar_rentAmount_cuotes {
         height: 87px;
         gap: 0.25rem;
+    }
+
+    .propertyDetailSidebar_owner_content {
+        width: 100%;
     }
 
     .text_badges {

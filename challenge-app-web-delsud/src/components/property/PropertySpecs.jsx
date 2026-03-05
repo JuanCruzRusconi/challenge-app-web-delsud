@@ -6,13 +6,14 @@ const PropertySpecs = ({ specs }) => {
         ["bedrooms", "bathrooms", "surface"].includes(spec.key)
     ))
     return (
-        <ul className="propertySpecs_container">
+        <div className={styles.propertySpecs_container}>
             {visibleSpecs?.map(spec => (
                 <li className={styles.propertySpecs_item} key={spec.key}>
-                    <p> {spec.value} {spec.label}</p>
+                    <img src={spec.icon} className={styles.propertySpecs_icon}/>
+                    <p className={styles.propertySpecs_value}>{spec.value}</p>
                 </li>
             ))}
-        </ul>
+        </div>
     );
 }
 
