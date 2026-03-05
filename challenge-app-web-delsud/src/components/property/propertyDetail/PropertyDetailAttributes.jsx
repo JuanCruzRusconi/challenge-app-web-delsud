@@ -1,6 +1,6 @@
 import styles from "./propertyDetail.module.css";
 
-const PropertyDetailAttributes = ({ attributes }) => {
+const PropertyDetailAttributes = ({ attributes = [] }) => {
 
     return (
         <div className={styles.propertyDetail_complements}>

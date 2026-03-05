@@ -14,30 +14,6 @@
     gap: 2rem;
 }
 
-.propertyDetailHero_header_container {
-    height: 118px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    left: 0;
-    gap: 1rem;
-}
-
-.propertyDetailHero_header_info {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-.propertyDetailHero_header_actions {
-    right: 0;
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-}
-
 .propertyDetail_image {
     min-width: 100px;
     position: "relative";
@@ -49,12 +25,63 @@
 .propertyDetail_sections {
     display: flex;
     flex-direction: column;
-    max-width: 1118px;
+    max-width: 326px;
 }
 
-.propertyDetail_specsItems {
+/* PropertyDetailHero Component Styles */
+.propertyDetailHero_header_container {
+    min-height: 190px;
+    width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    left: 0;
+    gap: 1rem;
+}
+
+.propertyDetailHero_title {
+    font-size: 32px;
+    line-height: 125%;
+}
+
+.propertyDetailHero_header_info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.propertyDetailHero_header_actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 1rem;
+}
+
+.propertyDetailHero_header_actions_content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.propertyDetailHero_header_actions_buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.propertyDetailHero_header_availability {
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 346px;
+    gap: 1rem;
 }
 
 /* PropertyDetailsSpecs Component Styles */
@@ -68,22 +95,24 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    width: 100%;
+    width: 326px;
 }
 
 .propertyDetailSpecs_specs {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
     gap: 0.5rem;
-    width: 100%;
+    width: 326px;
     border: 1px solid var(--color-border);
     border-radius: 8px;
 }
 
 .propertyDetail_complements {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-around;
     gap: 1rem;
 }
 
@@ -93,14 +122,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 102px;
-    width: 100%;
+    height: 100px;
+    width: 120px;
     gap: 1rem;
 }
 
 .propertyDetailSpecs_value {
     display: flex;
     flex-direction: row;
+    gap: 1rem;
 }
 
 .propertyDetail_specs_section {
@@ -112,6 +142,7 @@
 .propertyDetail_components {
     display: flex;
     flex-direction: column;
+    width: 326px;
     gap: 1rem;
 }
 
@@ -119,25 +150,110 @@
     grid-column: 1fr;
 }
 
+/* PropertyWarranty Component Styles */
+.propertyDetailWarranty_container {
+    display: none;
+}
+
 /* PropertySidebar Component Styles */
 .propertyDetailSidebar_container {
+    width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    padding-top: 2rem;
     gap: 2rem;
 }
 
 .propertyDetailSidebar_price {
+    color: #FFFFFF;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: start;
     padding-left: 2rem;
     height: 146px;
-    width: 100%;
-    border: 1px solid var(--color-border);
+    width: 326px;
+    background-color: var(--color-secondary);
     border-radius: 8px;
     gap: 0.5rem;
+}
+
+.propertyDetailSidebar_apply_consult_container {
+    height: 56px;
+    width: 350px;
+}
+
+.propertyDetailSidebar_apply_consult_button {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 150%;
+    height: 100%;
+    width: 326px;
+    color: #FFFFFF;
+    background-color: var(--color-secondary);
+    border-radius: 8px;
+    border: none;
+}
+
+.propertyDetailSidebar_date_warranty {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 150%;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.propertyDetailSidebar_divider {
+    width: 100%;
+    border-top: 1px solid var(--color-fourth);
+}
+
+.propertyDetailSidebar_rentAmount {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-border);
+    height: 272px;
+    width: 326px;
+    border-radius: 10px;
+    gap: 1.5rem;
+    padding: 0 2rem;
+}
+
+.propertyDetailSidebar_rentAmount_cuotes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    height: 85px;
+    width: 290px;
+    gap: 0.25rem;
+}
+
+.propertyDetailSidebar_rentAmount_text {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.propertyDetailSidebar_rentAmount_amount {
+    font-size: 32px;
+    font-weight: 800;
+    color: #00725B;
+}
+
+.propertyDetailSidebar_rentAmount_advise {
+    font-size: 10px;
+    font-weight: 200;
 }
 
 /* Texts & Buttons Styles */
@@ -146,7 +262,7 @@
 }
 
 .text_badges {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 400;
 }
 
@@ -171,12 +287,14 @@
 .text_amount {
     font-size: 18px;
     font-weight: 400;
+    line-height: 140%;
 }
 
 .text_price {
-    color: var(--color-secondary);
+    color: var(--color-tercieary);
     font-size: 30px;
     font-weight: 800;
+    line-height: 150%;
 }
 
 .button_return {
@@ -189,6 +307,20 @@
     background-color: transparent;
     border: none;
     color: var(--color-secondary);
+}
+
+.button_color {
+    background-color: transparent;
+    border: none;
+}
+
+.text_color {
+    font-size: 1rem;
+    color: var(--color-secondary);
+}
+
+.text_color:hover {
+    font-weight: 700;
 }
 
 .icon_return {
@@ -220,15 +352,40 @@
     }
 
     .propertyDetailHero_header_container {
-        height: 132px;
+        display: flex;
         flex-direction: row;
+        min-height: 200px;
+    }
+
+    .propertyDetailHero_header_actions {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .propertyDetailHero_header_actions_content {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .propertyDetailHero_title {
+        font-size: 36px;
+        line-height: 140%;
     }
 
     .propertyDetail_sections {
         display: grid;
         grid-template-columns: 2.75fr 1.25fr;
+        max-width: 1118px;
         gap: 2rem;
+    }
 
+    .propertyDetail_components {
+        width: 100%;
+    }
+
+    .propertyDetail_complements {
+        grid-template-columns: repeat(4, 1fr);
     }
 
     .propertyDetail_specs_aside {
@@ -236,17 +393,18 @@
         width: auto;
     }
 
-    /* PropertyDetailSpecs Styles */
-    .propertyDetailSpecs_content {
-        height: 102px;
+    /* PropertyDetailSpecs Component Styles */
+    .propertyDetailSpecs_specs {
         width: 100%;
-        gap: 1rem;
+    }
+
+    .propertyDetailSpecs_badges {
+        width: 100%;
     }
 
     .propertyDetailSpecs_value {
         gap: 2rem;
     }
-
 
     .available_button {
         font-size: 18px;
@@ -267,6 +425,115 @@
     .button_actions {
         height: 40px;
         width: 37px;
+    }
+
+    /* PropertyWarranty Component Styles */
+    .propertyDetailWarranty_container {
+        color: #FFFFFF;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #00725B;
+        width: 100%;
+        height: 100px;
+        border-radius: 10px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .propertyDetailWarranty_logo {
+        padding-top: 0.75rem;
+    }
+
+    .propertyDetailWarranty_texts {
+        display: flex;
+        flex-direction: column;
+        line-height: 100%;
+        gap: 0.5rem;
+    }
+
+    .propertyDetailWarranty_title {
+        font-size: 18px;
+    }
+
+    .propertyDetailWarranty_subtitle {
+        font-size: 12px;
+    }
+
+    .propertyDetailWarranty_button {
+        height: 56px;
+        width: 196px;
+        background-color: #FFFFFF;
+        color: var(--color-secondary);
+        font-size: 1rem;
+        line-height: 150%;
+        font-weight: 700;
+        border: none;
+        border-radius: 8px;
+    }
+
+    /* PropertySidebar Component Styles */
+    .propertyDetailSidebar_container {
+        padding-top: 0.5rem;
+    }
+
+    .propertyDetailSidebar_price {
+        height: 146px;
+        width: 100%;
+        background-color: #FFFFFF;
+        border: 1px solid var(--color-border);
+        border-radius: 8px;
+        gap: 0.5rem;
+    }
+
+    .propertyDetailSidebar_apply_consult_container {
+        height: 56px;
+        width: 350px;
+    }
+
+    .propertyDetailSidebar_apply_consult_button {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 150%;
+        height: 100%;
+        width: 100%;
+    }
+
+    .propertyDetailSidebar_rentAmount {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--color-border);
+        height: 272px;
+        width: 100%;
+        border-radius: 10px;
+        gap: 1.5rem;
+        padding: 0 2rem;
+    }
+
+    .propertyDetailSidebar_rentAmount_cuotes {
+        height: 87px;
+        gap: 0.25rem;
+    }
+
+    .text_badges {
+        font-size: 22px;
+    }
+
+    .text_amount {
+        color: var(--color-primary);
+    }
+
+    .text_price {
+        color: var(--color-secondary);
+        font-size: 30px;
+        font-weight: 800;
+    }
+
+    .text_content {
+        color: var(--color-primary);
     }
 
 }

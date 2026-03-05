@@ -1,13 +1,13 @@
 "use client";
 import Brand from "@/components/common/Brand";
-import styles from "./propertyDetail.module.css";
 import { useState } from "react";
 import WarrantyModal from "@/components/modals/WarrantyModal";
 import ConsultationModal from "@/components/modals/ConsultationModal";
 import ReportModal from "@/components/modals/ReportModal";
 import OwnerModal from "@/components/modals/OwnerModal";
+import styles from "./propertyDetail.module.css";
 
-const PropertyDetailSidebar = ({ price, expenses, available}) => {
+const PropertyDetailSidebar = ({ price, expenses, date }) => {
 
     // Modals
     const [ isOpenWarranty, setIsOpenWarranty ] = useState(false);
@@ -23,42 +23,43 @@ const PropertyDetailSidebar = ({ price, expenses, available}) => {
                 <p className={styles.text_content}><span className={styles.text_price}>{price}</span> /alquiler</p>
                 <p className={styles.text_content}><span className={styles.text_price}>{expenses}</span> /expensas</p>
             </div>
-            <div>
-                <button>
+            <div className={styles.propertyDetailSidebar_apply_consult_container}>
+                <button className={styles.propertyDetailSidebar_apply_consult_button}>
                     Quiero Alquilar
                 </button>
             </div>
-            <div>
-                <p>Disponible a partir de: {available}</p>
+            <div className={styles.propertyDetailSidebar_date_warranty}>
+                <p>Disponible a partir de: {date}</p>
+                <hr className={styles.propertyDetailSidebar_divider} />
                 <>
-                    <p>Garantía solicitada: <button onClick={() => setIsOpenWarranty(true)}><span className="color-secondary">Garantía Caución.</span></button></p>
+                    <p>Garantía solicitada: <button className={styles.button_color} onClick={() => setIsOpenWarranty(true)}><span className={styles.text_color}>Garantía Caución.</span></button></p>
                     { isOpenWarranty && <WarrantyModal onClose={() => setIsOpenWarranty(false)} /> }
                 </>
+                <hr className={styles.propertyDetailSidebar_divider} />
             </div>
-            <div>
+            <div className={styles.propertyDetailSidebar_rentAmount}>
                 <p>Alquilá esta propiedad con:</p>
                 <Brand />
-                <p>propietario</p>
-                <div>
-                    <p>12 cuotas sin interés de</p>
-                    <p></p>
+                <div className={styles.propertyDetailSidebar_rentAmount_cuotes}>
+                    <p className={styles.propertyDetailSidebar_rentAmount_text}>12 cuotas sin interés de</p>
+                    <p className={styles.propertyDetailSidebar_rentAmount_amount}>{expenses}</p>
                 </div>
-                <p>*El propietario la requiere como requisito de alquiler. </p>
+                <p className={styles.propertyDetailSidebar_rentAmount_advise}>*El propietario la requiere como requisito de alquiler.</p>
             </div>
             <div>
                 <p className={styles.color_secondary}>Información del propietario</p>
                 <p>propietario mejor</p>
                 <>
-                    <p>Ver más datos del <button onClick={() => setIsOpenOwner(true)}><span className={styles.color_secondary}>propietario</span></button>.</p>
+                    <p>Ver más datos del <button className={styles.button_color} onClick={() => setIsOpenOwner(true)}><span className={styles.text_color}>propietario</span></button>.</p>
                     { isOpenOwner && <OwnerModal onClose={() => setIsOpenOwner(false)} /> }
                 </>
             </div>
             <div>
                 <p>¿Querés saber más? Envianos un mensaje.</p>
-                <>
-                    <button onClick={() => setIsOpenConsultation(true)}>Consultar</button>
+                <div className={styles.propertyDetailSidebar_apply_consult_container}>
+                    <button className={styles.propertyDetailSidebar_apply_consult_button} onClick={() => setIsOpenConsultation(true)}>Consultar</button>
                     { isOpenConsultation && <ConsultationModal onClose={() => setIsOpenConsultation(false)} /> }
-                </>
+                </div>
                 <>
                     <p>Quiero <button onClick={() => setIsOpenReport(true)}><span className={styles.color_secondary}>reportar</span></button> la publicación/usuario.</p>
                     { isOpenReport && <ReportModal onClose={() => setIsOpenReport(false)} /> }

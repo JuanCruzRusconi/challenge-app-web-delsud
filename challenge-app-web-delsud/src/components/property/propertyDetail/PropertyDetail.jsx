@@ -6,6 +6,7 @@ import PropertyDetailAttributes from "./PropertyDetailAttributes";
 import PropertyDetailServices from "./PropertyDetailServices";
 import PropertyDetailLocation from "./PropertyDetailLocation";
 import PropertyDetailSidebar from "./PropertyDetailSidebar";
+import PropertyDetailWarranty from "./PropertyDetailWarranty";
 import styles from "./propertyDetail.module.css";
 
 const PropertyDetail = ({ property }) => {
@@ -37,7 +38,10 @@ const PropertyDetail = ({ property }) => {
                     </div>
                     <div className={styles.propertyDetail_components}>
                         <PropertySubtitle text="Ubicación en el mapa" />
-                        <PropertyDetailLocation location={property.location} />
+                        <PropertyDetailLocation location={property.location} map={property.map} />
+                    </div>
+                    <div className={styles.propertyDetail_components}>
+                        <PropertyDetailWarranty />
                     </div>
                 </section>
                 <aside className={styles.propertyDetail_specs_aside}>
