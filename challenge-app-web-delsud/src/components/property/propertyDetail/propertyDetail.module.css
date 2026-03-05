@@ -357,12 +357,6 @@
         min-height: 200px;
     }
 
-    .propertyDetailHero_header_actions {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-    }
-
     .propertyDetailHero_header_actions_content {
         width: 100%;
         justify-content: space-between;

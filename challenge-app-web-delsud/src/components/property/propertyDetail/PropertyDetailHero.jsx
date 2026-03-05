@@ -29,7 +29,7 @@ const PropertyDetailHero = ({ title, image, location, available }) => {
                                 { isOpenShare && <ShareModal onClose={() => setIsOpenShare(false)} /> }
                             </div>
                         </div>
-                        <div>
+                        <div className={styles.propertyDetailHero_available_button}>
                             { available ? <button className={styles.available_button} onClick={() => setIsOpenInteresetd(true)}>Disponible para alquiler digital</button> : null}
                             { isOpenInterested && <InterestedModal onClose={() => setIsOpenInteresetd(false)} /> }      
                         </div>
