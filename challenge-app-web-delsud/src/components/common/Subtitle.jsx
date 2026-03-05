@@ -1,8 +1,10 @@
-const PropertySubtitle = ({ text }) => {
+import styles from "./common.module.css";
+
+const Subtitle = ({ text }) => {
 
     return (
-        <h2>{text}</h2>
+        <h4 className={styles.subtitle_text}>{text}</h4>
     )
 }
 
-export default PropertySubtitle;
+export default Subtitle;
