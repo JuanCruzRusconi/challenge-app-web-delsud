@@ -1,0 +1,98 @@
+@import "../styles/variables.css";
+
+.notFound_container {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+    margin: 4rem auto;
+    width: 80%;
+    background-color: #F7F7FD;
+    border-radius: 32px;
+    border: 1px solid var(--color-secondary);
+    gap: 1.5rem;
+}
+
+.notFound_title {
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--color-secondary);
+}
+
+.notFound_subtitle {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.notFound_text {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.notFound_back {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--color-secondary);
+}
+
+.button_return {
+    height: 30px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: transparent;
+    border: none;
+    color: var(--color-secondary);
+}
+
+.icon_return {
+    height: 25px;
+    width: 22px;
+}
+
+@media (min-width: 1200px) {
+
+    .notFound_title {
+        font-size: 7rem;
+        font-weight: 700;
+        color: var(--color-secondary);
+    }
+
+    .notFound_subtitle {
+        font-size: 3rem;
+        font-weight: 400;
+    }
+
+    .notFound_text {
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+
+    .notFound_back {
+        font-size: 18px;
+        font-weight: 700;
+        color: var(--color-secondary);
+    }
+
+    .button_return {
+        height: 30px;
+        width: 100px;
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+        font-weight: 700;
+        background-color: transparent;
+        border: none;
+        color: var(--color-secondary);
+    }
+
+    .icon_return {
+        height: 27px;
+        width: 24px;
+    }
+
+}
