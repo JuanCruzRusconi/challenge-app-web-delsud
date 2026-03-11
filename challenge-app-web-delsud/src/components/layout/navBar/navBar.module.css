@@ -8,12 +8,18 @@
     justify-content: space-around;
 }
 
+.menu_button {
+    display: block;
+    background-color: transparent;
+    border: none;
+}
+
 .nav_container {
     height: 72px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-between;
     width: 85%;
     gap: 80px;
 }
@@ -29,7 +35,21 @@
 
 .navlinks_container {
     display: none;
+    position: absolute;
     list-style: none;
+}
+
+.navlinks_container.menu_open {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    top: 72px;
+    left: 0;
+    height: 300px;
+    width: 100%;
+    background-color: var(--color-background);
+    z-index: 1000;
 }
 
 .navlinks_item {
@@ -38,8 +58,9 @@
     font-weight: 500;
 }
 
-.navActions_container {
-    display: none;
+.navlinks_text:hover {
+    color: var(--color-secondary);
+    scale: 1.05;
 }
 
 .navButton {
@@ -53,7 +74,10 @@
     border-radius: 8px;
     border: 5px;
     border-color: var(--color-secondary);
-    
+}
+
+.navActions_container {
+    display: none;
 }
 
 .login {
@@ -74,9 +98,16 @@
         justify-content: center;
         align-items: center;
     }
+
+    .menu_button {
+        display: none;
+    }
+
     .nav_container {
         height: 96px;
         padding: 0 4rem;
+        gap: 10rem;
+        justify-content: space-around;
     }
 
     .logo_container {
@@ -87,6 +118,9 @@
         flex: 2;
         display: flex;
         flex-direction: row;
+        justify-content: space-around;
+        min-width: 550px;
+        width: auto;
     }
 
     .navlinks_item {
@@ -95,7 +129,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 140px;
+        width: auto;
     }
 
     .navActions_container {
@@ -104,6 +138,6 @@
         flex-direction: row;
         justify-content: flex-end;
         gap: 1rem;
+        width: 200px;
     }
-
 }

@@ -9,11 +9,11 @@ const montserratFont = Montserrat({
   weight: ["800"],
 });
 
-const Brand = ({ color }) => {
+const Brand = ({ color, closeMenu }) => {
 
     return (
         <>
-            <Link className={styles.brand_container} href={"/"}>
+            <Link className={styles.brand_container} href={"/"} onClick={closeMenu}>
                 <Image src="/icons/RectangleLogo.png" alt="logo"
                     height={16}
                     width={16}/>
