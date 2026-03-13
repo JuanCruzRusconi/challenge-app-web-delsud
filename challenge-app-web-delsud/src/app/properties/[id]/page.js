@@ -2,6 +2,7 @@ import { properties } from "@/data/properties";
 import PropertyDetail from "@/components/property/propertyDetail/PropertyDetail";
 import styles from "./page.module.css";
 import PropertiesCarroulsel from "@/components/property/PropertiesCarrousel";
+import { notFound } from "next/navigation";
 
 export const dynamicParams = false;
 
@@ -15,13 +16,13 @@ export async function generateStaticParams () {
 
 export default async function Page({ params }) {
 
-    const { id } = params;
+    const { id } = await params;
 
     const property = properties.find(
         p => String(p.id) === id
     );  
 
-    if(!property) return "Propiedad no encontrada.";
+    if(!property) return notFound();
 
     const otherProperties = properties.filter(
         p => String(p.id) !== String(property.id)
